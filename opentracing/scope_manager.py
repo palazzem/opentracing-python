@@ -54,7 +54,7 @@ class ScopeManager(object):
         currently active `Scope#span()`.
 
         If there is a non-null `Scope`, its wrapped `Span` becomes an implicit
-        parent of any newly-created `Span` at `Tracer#start_active()`
+        parent of any newly-created `Span` at `Tracer#start_active_scope()`
         time.
 
         :return: the `Scope` that is active, or `None` if not available.
